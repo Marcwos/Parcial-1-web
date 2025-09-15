@@ -17,9 +17,9 @@ const AdoptionInfoComponent: React.FC<AdoptionInfoComponentProps> = ({ adoptionI
           <div className="relative">
             <div className="rounded-lg overflow-hidden shadow-lg font-black">
               <Image
-                src="/cat-adoption.svg"
+                src="/animalbonito2.jpg"
                 alt={adoptionInfo.image.alt}
-                width={600}
+                width={300}
                 height={400}
                 className="w-full h-auto object-cover"
                 priority
@@ -30,35 +30,26 @@ const AdoptionInfoComponent: React.FC<AdoptionInfoComponentProps> = ({ adoptionI
           {/* Content Section */}
           <div className="space-y-6">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-pae-green mb-4">
-                {adoptionInfo.title}
-              </h2>
               
-              <div className="space-y-4 text-black">
-                <p className="text-lg leading-relaxed">
-                  {adoptionInfo.description}{' '}
-                  <span className="font-bold text-pae-green-dark text-xl">
-                    {adoptionInfo.responsibilityText}
-                  </span>
-                  .
-                </p>
-                
-                <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-pae-green">
-                  <p className="text-gray-800 leading-relaxed italic">
-                    {adoptionInfo.detailedInfo}
-                  </p>
-                  
-                  <footer className="mt-4 pt-4 border-t border-gray-200">
-                    <p className="text-sm text-gray-600 font-medium">
-                      {adoptionInfo.source}
-                    </p>
-                  </footer>
                 </div>
+
+                {/* Historias de mascotas */}
+                {adoptionInfo.petStories && adoptionInfo.petStories.length > 0 && (
+                  <div className="space-y-6">
+                    <h3 className="text-2xl font-bold text-green-800 mb-4">Historias de Adopción</h3>
+                    {adoptionInfo.petStories.map((petStory) => (
+                      <div key={petStory.id} className="bg-green-50 p-6 rounded-lg shadow-sm border-l-4 border-green-500">
+                        <h4 className="text-xl font-bold text-green-800 mb-3">Historia de {petStory.name}</h4>
+                        <div className="text-gray-700 leading-relaxed whitespace-pre-line">
+                          {petStory.story}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </div>
-        </div>
-      </div>
     </section>
   );
 };

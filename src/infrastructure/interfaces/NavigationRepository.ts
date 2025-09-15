@@ -10,7 +10,7 @@ export class InMemoryNavigationRepository implements NavigationRepository {
         href: '/'
       },
       items: [
-        { id: 'adopcion', label: 'ADOPCIÓN', href: '/adopcion' },
+        { id: 'adopcion', label: 'INICIO', href: '/adopcion' },
         { id: 'servicios', label: 'SERVICIOS', href: '/servicios', hasDropdown: true },
         { id: 'campanas', label: 'CAMPAÑAS', href: '/campanas', hasDropdown: true },
       ]

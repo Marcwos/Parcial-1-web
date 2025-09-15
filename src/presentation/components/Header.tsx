@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ navigationMenu }) => {
           <div className="flex-shrink-0">
             <a href={navigationMenu.logo.href} className="flex items-center">
               <div className="text-2xl font-bold text-pae-green">
-                <span className="text-black">Fifi-adopt</span>
+                <span className="text-black">FIFI ADOPT</span>
               </div>
             </a>
           </div>

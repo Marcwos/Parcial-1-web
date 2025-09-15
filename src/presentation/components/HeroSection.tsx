@@ -22,7 +22,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       />
       
       {/* Alternative background if no image */}
-      <div className="absolute inset-0 bg-gradient-to-r from-orange-200 via-orange-300 to-orange-400" />
+      <div className="absolute inset-0 bg-gradient-to-r from-white via-blue-400 to-blue-500" />
       
       {/* Content */}
       <div className="relative z-10 text-center">
