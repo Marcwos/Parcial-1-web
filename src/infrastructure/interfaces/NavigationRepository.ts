@@ -10,14 +10,9 @@ export class InMemoryNavigationRepository implements NavigationRepository {
         href: '/'
       },
       items: [
-        { id: 'donaciones', label: 'DONACIONES', href: '/donaciones' },
-        { id: 'sorteo', label: 'SORTEO ANIMAL', href: '/sorteo' },
         { id: 'adopcion', label: 'ADOPCIÓN', href: '/adopcion' },
-        { id: 'quienes-somos', label: 'QUIENES SOMOS', href: '/quienes-somos', hasDropdown: true },
         { id: 'servicios', label: 'SERVICIOS', href: '/servicios', hasDropdown: true },
         { id: 'campanas', label: 'CAMPAÑAS', href: '/campanas', hasDropdown: true },
-        { id: 'programas', label: 'PROGRAMAS', href: '/programas', hasDropdown: true },
-        { id: 'contacto', label: 'CONTACTO', href: '/contacto' }
       ]
     };
   }

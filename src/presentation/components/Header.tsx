@@ -28,10 +28,10 @@ const Header: React.FC<HeaderProps> = ({ navigationMenu }) => {
               <div key={item.id} className="relative group">
                 <a
                   href={item.href}
-                  className={`text-sm font-medium transition-colors duration-200 hover:text-pae-green ${
+                  className={`text-sm font-medium text-black ${
                     item.id === 'adopcion' 
                       ? 'text-pae-green border-b-2 border-pae-green pb-1' 
-                      : 'text-gray-700'
+                      : 'text-black'
                   }`}
                 >
                   {item.label}
